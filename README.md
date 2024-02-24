@@ -40,10 +40,16 @@ services:
   kw:
     image: timoreymann/web-kee-vault:latest
     environment:
+      # Host for WebDAV
       KW_WEBDAV_HOST: my-webdav.example.com
+      # Authentication part to WebDav Server in format <KW_WEBDAV_AUTH_TYPE> <KW_WEBDAV_AUTH_VALUE>
       KW_WEBDAV_AUTH_TYPE: Basic
+      # Authentication part to WebDav Server in format <KW_WEBDAV_AUTH_TYPE> <KW_WEBDAV_AUTH_VALUE>
       KW_WEBDAV_AUTH_VALUE: base64 encoded username:password
+      # Path to your kdbx (KeyPass) file on the WebDAV server
       KW_WEBDAV_KDBX_PATH: /path/to/file.kdbx
+      # Used by KeeWeb to display the name of your database
+      KW_FILE_DISPLAY_NAME: My passwords
     ports:
       - 8080:8080 # this port will also expose your kdbx file WITHOUT authentication, make sure to read [Usage > Secure] in the README!
 ````
