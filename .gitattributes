@@ -1,1 +1,1 @@
-Caddyfile linguist-language=kotlin
+Caddyfile linguist-language=kotlin linguist-detectable=false
