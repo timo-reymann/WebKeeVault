@@ -1,0 +1,42 @@
+:8080 {
+    root * /opt/keeweb
+
+    file_server
+
+    handle_path /passwords.kdbx {
+        reverse_proxy {$KW_WEBDAV_HOST} {
+            header_up Host {$KW_WEBDAV_HOST}
+            header_up Authorization "{$KW_WEBDAV_AUTH_TYPE} {$KW_WEBDAV_AUTH_VALUE}"
+            rewrite   {$KW_WEBDAV_KDBX_PATH}
+        }
+    }
+
+    handle_path /config.json {
+        header Content-Type application/json
+        templates
+        respond `{
+  "settings": {
+    "theme": "dark",
+    "autoSwitchTheme": true,
+    "webdav": true,
+    "webdavSaveMethod": "put",
+    "webdavStatReload": true,
+    "showOnlyFilesFromConfig": true,
+    "canOpenDemo": false,
+    "canOpen": false,
+    "canCreate": false,
+    "canOpenStorage": false,
+    "canOpenGenerator": false,
+    "canOpenSettings": false,
+    "canRemoveLatest": false
+  },
+  "files": [
+     {
+        "storage":"webdav",
+        "path": "/passwords.kdbx",
+        "name": "{$KW_FILE_DISPLAY_NAME}"
+     }
+  ]
+}`
+    }
+}
