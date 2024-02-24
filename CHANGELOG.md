@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/timo-reymann/WebKeeVault/compare/1.2.0...1.2.1) (2024-02-24)
+
+
+### Bug Fixes
+
+* Add missing OCI labels ([f42cc5c](https://github.com/timo-reymann/WebKeeVault/commit/f42cc5cf7be26237ab64249c88bb3eb9f2af5b55))
+
 ## [1.2.0](https://github.com/timo-reymann/WebKeeVault/compare/1.1.0...1.2.0) (2024-02-24)
 
 
