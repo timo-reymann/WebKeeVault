@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/timo-reymann/WebKeeVault/compare/1.1.0...1.2.0) (2024-02-24)
+
+
+### Features
+
+* Add webdav protocol config ([c3172e8](https://github.com/timo-reymann/WebKeeVault/commit/c3172e8d95f4b6c94c3e6ab4de58632bbe8dc36a))
+
 ## [1.1.0](https://github.com/timo-reymann/WebKeeVault/compare/1.0.0...1.1.0) (2024-02-24)
 
 
