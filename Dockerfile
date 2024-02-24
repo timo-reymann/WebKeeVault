@@ -5,7 +5,7 @@ RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
         curl \
         ca-certificates \
-        unzip \
+        unzip
 
 # renovate: datasource=github-releases depName=keeweb/keeweb
 ARG keeweb_version=v1.18.7
