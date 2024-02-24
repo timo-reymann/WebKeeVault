@@ -4,7 +4,7 @@
     file_server
 
     handle_path /passwords.kdbx {
-        reverse_proxy {$KW_WEBDAV_HOST} {
+        reverse_proxy {$KW_WEBDAV_PROTOCOL}://{$KW_WEBDAV_HOST} {
             header_up Host {$KW_WEBDAV_HOST}
             header_up Authorization "{$KW_WEBDAV_AUTH_TYPE} {$KW_WEBDAV_AUTH_VALUE}"
             rewrite   {$KW_WEBDAV_KDBX_PATH}

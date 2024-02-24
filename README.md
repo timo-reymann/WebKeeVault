@@ -40,6 +40,8 @@ services:
   kw:
     image: timoreymann/web-kee-vault:latest
     environment:
+      # Protocol for webdav (http/https); https strongly recommended when the communication is over the internet
+      KW_WEBDAV_PROTOCOL: https
       # Host for WebDAV
       KW_WEBDAV_HOST: my-webdav.example.com
       # Authentication part to WebDav Server in format <KW_WEBDAV_AUTH_TYPE> <KW_WEBDAV_AUTH_VALUE>

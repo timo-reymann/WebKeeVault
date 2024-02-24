@@ -23,6 +23,7 @@ COPY --from=keeweb_sources /build /opt/keeweb
 COPY Caddyfile /etc/caddy/Caddyfile
 
 FROM gcr.io/distroless/static-debian12
+ENV KW_WEBDAV_PROTOCOL=https
 ENV KW_WEBDAV_AUTH_TYPE=Basic
 ENV KW_FILE_DISPLAY_NAME="My Passwords"
 
