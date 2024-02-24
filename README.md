@@ -9,7 +9,7 @@ WebKeeVault
 <p align="center">
 	<img width="300" src="https://raw.githubusercontent.com/timo-reymann/WebKeeVault/main/.github/images/logo.png">
     <br />
-    Access a shared KeePass-File from anywhere you have access to a web browser.
+    Access your keepass files hosted on WebDAV through the browser
 </p>
 
 ## Features
