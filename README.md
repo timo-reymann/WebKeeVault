@@ -104,3 +104,8 @@ docker build . -t timoreymann/web-kee-vault:local
 ### Alternatives
 
 - Downloading file ad-hoc and/or configuring KeeWeb/KeePass to load from WebDav.
+
+### Credits
+
+- [Caddy](https://caddyserver.com/) is used as a simple, yet powerful web server under the hood
+- [KeeWeb](https://keeweb.info/) provides the Web UI part
