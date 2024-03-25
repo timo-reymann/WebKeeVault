@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loading WebKeeVault ..</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="refresh" content="1; URL=./app" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            background: #1e1e1e;
+        }
+
+        body {
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lock {
+            background: #ff5b5b;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-tap-highlight-color: transparent;
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+
+        svg {
+            fill: none;
+        }
+
+        .bling {
+            stroke: #fff;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-dasharray: 3;
+            stroke-dashoffset: 15;
+            transition: all 0.2s ease;
+        }
+
+        svg .lock {
+            stroke: #fff;
+            stroke-width: 4;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-dasharray: 36;
+            transition: all 0.4s ease;
+        }
+
+        .lockb {
+            fill: #fff;
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            transition: all 0.2s ease;
+        }
+
+        .bling {
+            animation: bling6132 1s linear forwards;
+            animation-delay: .3s;
+        }
+
+        .lock {
+            stroke-dasharray: 48;
+            transform: translateY(7px);
+            animation: unlock .4s linear forwards;
+            animation-delay: .2s;
+        }
+
+        @keyframes bling6132 {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                stroke-dasharray: 3;
+                stroke-dashoffset: 12;
+                opacity: .5;
+            }
+
+            100% {
+                stroke-dasharray: 3;
+                stroke-dashoffset: 9;
+                opacity: 1;
+            }
+        }
+
+        @keyframes unlock {
+            100% {
+                transform: translateY(0);
+                background: #abcf84;
+            }
+        }
+    </style>
+</head>
+<body class="container">
+<div class="lock">
+    <svg viewBox="0 0 30 40" width="100" height="80">
+        <path class="lockb"
+              d="M27 27C27 34.1797 21.1797 40 14 40C6.8203 40 1 34.1797 1 27C1 19.8203 6.8203 14 14 14C21.1797 14 27 19.8203 27 27ZM15.6298 26.5191C16.4544 25.9845 17 25.056 17 24C17 22.3431 15.6569 21 14 21C12.3431 21 11 22.3431 11 24C11 25.056 11.5456 25.9845 12.3702 26.5191L11 32H17L15.6298 26.5191Z"></path>
+        <path class="lock" d="M6 21V10C6 5.58172 9.58172 2 14 2V2C18.4183 2 22 5.58172 22 10V21"></path>
+        <path class="bling" d="M29 20L31 22"></path>
+        <path class="bling" d="M31.5 15H34.5"></path>
+        <path class="bling" d="M29 10L31 8"></path>
+    </svg>
+</div>
+</body>
+</html>

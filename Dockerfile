@@ -11,10 +11,11 @@ RUN apt-get update -y \
 ARG keeweb_version=v1.18.7
 RUN curl -Ls https://github.com/keeweb/keeweb/releases/download/${keeweb_version}/KeeWeb-$(echo $keeweb_version | cut -c 2-).html.zip --output keeweb.zip \
     && ls -la \
-    && unzip keeweb.zip \
+    && unzip keeweb.zip -d app \
     && rm keeweb.zip
 
-RUN sed -i 's/(no-config)/config.json/g' index.html
+COPY web_index.html index.html
+RUN sed -i 's/(no-config)/..\/config.json/g' app/index.html
 
 FROM caddy:2.7.6 as caddy_base
 
