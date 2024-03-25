@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/timo-reymann/WebKeeVault/compare/1.2.1...2.0.0) (2024-03-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add loading index page
+
+### Features
+
+* Add loading index page ([eaf8a5d](https://github.com/timo-reymann/WebKeeVault/commit/eaf8a5ddcbd287252df6a68c4a2e3b8e0d0fc791))
+
 ## [1.2.1](https://github.com/timo-reymann/WebKeeVault/compare/1.2.0...1.2.1) (2024-02-24)
 
 
