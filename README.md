@@ -31,7 +31,7 @@ WebKeeVault
 > ```sh
 > export username="my-user"
 > export password="my-password"
-> echo "$username:$password" | base64
+> echo -n "$username:$password" | base64
 > ```
 
 ````yaml
