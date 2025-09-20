@@ -1,3 +1,9 @@
+## [2.1.0](https://github.com/timo-reymann/WebKeeVault/compare/2.0.2...2.1.0) (2025-09-20)
+
+### Features
+
+* Trigger update for caddy ([5fc66f4](https://github.com/timo-reymann/WebKeeVault/commit/5fc66f43d77a6cce8ade724a517a7f0a040d5360))
+
 ## [2.0.1](https://github.com/timo-reymann/WebKeeVault/compare/2.0.0...2.0.1) (2024-06-04)
 
 
