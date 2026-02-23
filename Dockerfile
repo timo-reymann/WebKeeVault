@@ -17,7 +17,7 @@ RUN curl -Ls https://github.com/keeweb/keeweb/releases/download/${keeweb_version
 COPY web_index.html index.html
 RUN sed -i 's/(no-config)/..\/config.json/g' app/index.html
 
-FROM caddy:2.10.2 as caddy_base
+FROM caddy:2.11.1 as caddy_base
 
 FROM scratch as files
 COPY --from=keeweb_sources /build /opt/keeweb
