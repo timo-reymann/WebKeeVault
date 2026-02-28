@@ -1,3 +1,7 @@
+FROM scratch AS license
+COPY LICENSE LICENSE
+COPY NOTICE NOTICE 
+
 FROM ubuntu as keeweb_sources
 WORKDIR /build
 RUN apt-get update -y \
@@ -24,7 +28,7 @@ COPY --from=keeweb_sources /build /opt/keeweb
 COPY Caddyfile /etc/caddy/Caddyfile
 
 FROM gcr.io/distroless/static-debian12
-
+COPY --from=license / /
 LABEL org.opencontainers.image.title="WebKeeVault"
 LABEL org.opencontainers.image.description="Access your keepass files hosted on WebDAV through the browser"
 LABEL org.opencontainers.image.ref.name="main"
