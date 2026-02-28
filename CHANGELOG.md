@@ -1,3 +1,9 @@
+## [2.2.0](https://github.com/timo-reymann/WebKeeVault/compare/2.1.0...2.2.0) (2026-02-28)
+
+### Features
+
+* Add NOTICE ([62e97a1](https://github.com/timo-reymann/WebKeeVault/commit/62e97a13396f8d7ef0032d349d3d0541fa8704f4))
+
 ## [2.1.0](https://github.com/timo-reymann/WebKeeVault/compare/2.0.2...2.1.0) (2025-09-20)
 
 ### Features
