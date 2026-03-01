@@ -1,3 +1,9 @@
+## [2.3.0](https://github.com/timo-reymann/WebKeeVault/compare/2.2.0...2.3.0) (2026-03-01)
+
+### Features
+
+* Add SBOM ([4879466](https://github.com/timo-reymann/WebKeeVault/commit/487946698aeb6a6c53c430b18dad4f1a608ee3cb))
+
 ## [2.2.0](https://github.com/timo-reymann/WebKeeVault/compare/2.1.0...2.2.0) (2026-02-28)
 
 ### Features
