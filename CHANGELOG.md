@@ -1,3 +1,9 @@
+## [2.3.1](https://github.com/timo-reymann/WebKeeVault/compare/2.3.0...2.3.1) (2026-03-28)
+
+### Bug Fixes
+
+* Optimize layers ([ebcc48e](https://github.com/timo-reymann/WebKeeVault/commit/ebcc48e7927965880bc638d8fa7c37e6f164d03d))
+
 ## [2.3.0](https://github.com/timo-reymann/WebKeeVault/compare/2.2.0...2.3.0) (2026-03-01)
 
 ### Features
