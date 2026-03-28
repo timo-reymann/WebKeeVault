@@ -29,22 +29,24 @@ COPY Caddyfile /etc/caddy/Caddyfile
 
 FROM gcr.io/distroless/static-debian12
 COPY --from=license / /
-LABEL org.opencontainers.image.title="WebKeeVault"
-LABEL org.opencontainers.image.description="Access your keepass files hosted on WebDAV through the browser"
-LABEL org.opencontainers.image.ref.name="main"
-LABEL org.opencontainers.image.licenses='MIT'
-LABEL org.opencontainers.image.vendor="Timo Reymann <mail@timo-reymann.de>"
-LABEL org.opencontainers.image.authors="Timo Reymann <mail@timo-reymann.de>"
-LABEL org.opencontainers.image.url="https://github.com/timo-reymann/WebKeeVault"
-LABEL org.opencontainers.image.documentation="https://github.com/timo-reymann/WebKeeVault"
-LABEL org.opencontainers.image.source="https://github.com/timo-reymann/WebKeeVault.git"
 
-ENV KW_WEBDAV_PROTOCOL=https
-ENV KW_WEBDAV_AUTH_TYPE=Basic
-ENV KW_FILE_DISPLAY_NAME="My Passwords"
+LABEL org.opencontainers.image.title="WebKeeVault" \
+      org.opencontainers.image.description="Access your keepass files hosted on WebDAV through the browser" \
+      org.opencontainers.image.ref.name="main" \
+      org.opencontainers.image.licenses='MIT' \
+      org.opencontainers.image.vendor="Timo Reymann <mail@timo-reymann.de>" \
+      org.opencontainers.image.authors="Timo Reymann <mail@timo-reymann.de>" \
+      org.opencontainers.image.url="https://github.com/timo-reymann/WebKeeVault" \
+      org.opencontainers.image.documentation="https://github.com/timo-reymann/WebKeeVault" \
+      org.opencontainers.image.source="https://github.com/timo-reymann/WebKeeVault.git"
+
+ENV KW_WEBDAV_PROTOCOL=https \
+    KW_WEBDAV_AUTH_TYPE=Basic \
+    KW_FILE_DISPLAY_NAME="My Passwords"
 
 COPY --from=caddy_base --chown=nonroot:nonroot /usr/bin/caddy /usr/bin/caddy
 COPY --from=files --chown=nonroot:nonroot / /
 
 EXPOSE 8080
+
 ENTRYPOINT ["caddy", "run", "--config", "/etc/caddy/Caddyfile"]
