@@ -1,8 +1,8 @@
 FROM scratch AS license
 COPY LICENSE LICENSE
-COPY NOTICE NOTICE 
+COPY NOTICE NOTICE
 
-FROM ubuntu as keeweb_sources
+FROM ubuntu AS keeweb_sources
 WORKDIR /build
 RUN apt-get update -y \
     && apt-get upgrade -y \
@@ -21,13 +21,13 @@ RUN curl -Ls https://github.com/keeweb/keeweb/releases/download/${keeweb_version
 COPY web_index.html index.html
 RUN sed -i 's/(no-config)/..\/config.json/g' app/index.html
 
-FROM caddy:2.11.2 as caddy_base
+FROM caddy:2.11.2 AS caddy_base
 
-FROM scratch as files
+FROM scratch AS files
 COPY --from=keeweb_sources /build /opt/keeweb
 COPY Caddyfile /etc/caddy/Caddyfile
 
-FROM gcr.io/distroless/static-debian12
+FROM timoreymann/ubuntu-runtime:26.04
 COPY --from=license / /
 
 LABEL org.opencontainers.image.title="WebKeeVault" \
