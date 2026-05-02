@@ -1,3 +1,9 @@
+## [2.4.0](https://github.com/timo-reymann/WebKeeVault/compare/2.3.1...2.4.0) (2026-05-02)
+
+### Features
+
+* Use custom runtime image ([b5fb58b](https://github.com/timo-reymann/WebKeeVault/commit/b5fb58b40a042872d33f7775bd0f4897083d79c4))
+
 ## [2.3.1](https://github.com/timo-reymann/WebKeeVault/compare/2.3.0...2.3.1) (2026-03-28)
 
 ### Bug Fixes
