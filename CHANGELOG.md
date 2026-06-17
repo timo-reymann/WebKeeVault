@@ -1,3 +1,9 @@
+## [2.4.1](https://github.com/timo-reymann/WebKeeVault/compare/2.4.0...2.4.1) (2026-06-17)
+
+### Bug Fixes
+
+* **deps:** update caddy docker tag to v2.11.4 ([#19](https://github.com/timo-reymann/WebKeeVault/issues/19)) ([1fa4a08](https://github.com/timo-reymann/WebKeeVault/commit/1fa4a08db294c2942e7f2ec66f8dd924e0505310))
+
 ## [2.4.0](https://github.com/timo-reymann/WebKeeVault/compare/2.3.1...2.4.0) (2026-05-02)
 
 ### Features
