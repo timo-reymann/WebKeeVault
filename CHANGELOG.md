@@ -1,3 +1,9 @@
+## [2.4.2](https://github.com/timo-reymann/WebKeeVault/compare/2.4.1...2.4.2) (2026-07-06)
+
+### Reverts
+
+* Revert "chore(deps): update timoreymann/ubuntu-runtime docker tag to v26.17 (…" ([51f561f](https://github.com/timo-reymann/WebKeeVault/commit/51f561f6001f85e4af182ede34029ea54a6aca27))
+
 ## [2.4.1](https://github.com/timo-reymann/WebKeeVault/compare/2.4.0...2.4.1) (2026-06-17)
 
 ### Bug Fixes
