@@ -27,7 +27,7 @@ FROM scratch AS files
 COPY --from=keeweb_sources /build /opt/keeweb
 COPY Caddyfile /etc/caddy/Caddyfile
 
-FROM timoreymann/ubuntu-runtime:26.22
+FROM timoreymann/ubuntu-runtime:26.24
 COPY --from=license / /
 
 LABEL org.opencontainers.image.title="WebKeeVault" \
