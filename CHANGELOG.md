@@ -1,3 +1,9 @@
+## [2.5.0](https://github.com/timo-reymann/WebKeeVault/compare/2.4.2...2.5.0) (2026-10-25)
+
+### Features
+
+* Release version ranges ([7677c4b](https://github.com/timo-reymann/WebKeeVault/commit/7677c4b32d5f80cbaf5b3e750093e210d40497d2))
+
 ## [2.4.2](https://github.com/timo-reymann/WebKeeVault/compare/2.4.1...2.4.2) (2026-07-06)
 
 ### Reverts
